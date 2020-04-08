@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function add(){
+
+var c=document.getElementById("a").value+document.getElementById("b").value;
+alert('hi'+c);
+document.querySelector('output').value=c;
+}
+</script>
+
+</head>
+<body>
+ <img src="hp.jfif" alt="harrypotter" usemap="#hp">
+    <map name="hp">
+        <area shape="rect" coords="0,20,20,40" href="https:\\www.harrypotter.com" alt="Rectangle">
+    	<area shape="circle" coords="55,55,30" href="/examples/html/pentagon.html" alt="Pentagon">
+    </map>
+
+
+	<p>Pollution Level: <meter low="60" high="80" max="100" value="81">Very High</meter></p>
+
+
+
+
+
+  <form>
+	A:	<input type="number" id="a" value="50"> 
+	B:	<input type="number" id="b" value="100"> 
+	Result: 	<output name="result" value="0"></output>
+<input type="button" onclick="add()" value="add">
+	</form>
+
+</body>
+</html>
