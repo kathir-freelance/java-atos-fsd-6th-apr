@@ -1,0 +1,105 @@
+https://javascript.info/comparison
+https://www.quackit.com/javascript/examples/
+https://www.freecodecamp.org/news/javascript-example/
+
+JavaScript is a scripting language designed to interact with the elements of web pages.
+
+JavaScript consists of three main parts:
+
+	1. ECMAScript that provides the core functionality.
+	2. The Document Object Model (DOM), which provides interfaces for interacting with elements on web pages
+	3. The Browser Object Model (BOM), which provides interfaces for interacting with web browsers.
+
+Types of variable:
+
+	// global variable
+	// local variable
+
+ 
+// global variable
+var message = "Hello";
+function say() {
+    // local variable
+    message = 'Hi';
+    console.log(message); // which message?
+}
+say();// Hi
+console.log(message); // Hi
+
+Non-strict mode:
+================
+in below code snippet it declares a variable and then initializes.
+
+we need not do it.
+
+function say() {
+    message = 'Hi'; // what?
+    console.log(message);
+}
+say(); // Hi
+console.log(message); // Hi
+
+use strict:
+============
+
+"use strict";
+ 
+function say() {
+    message = 'Hi'; // ReferenceError
+    console.log(message);
+}
+say(); // Hi
+console.log(message); // Hi
+
+JavaScript variable hoisting:
+
+	Hoisting is a mechanism that JavaScript engine moves all the variable declarations to 
+	the top of their scope, either function or global scope.
+
+	If you declare a variable with the var keyword, the variable is hoisted to the top of
+	its enclosing scope. so it will print 'undefined'.
+
+	console.log(foo); // undefined
+	var foo;
+	
+what happens is:
+
+	var foo;
+	console.log(foo); // undefined
+
+let and const are introduced in es6
+
+let declaration:
+
+	let is new feature in ES6 which is called block scoped
+
+	var is function scoped
+
+	var t=90; 
+	function mm(){
+	var t=9000; //?
+	 let t=33; 
+		{
+		 let t=44; 
+		console.log(t);
+		}
+	 console.log(t);
+	}
+	mm();
+
+output:	
+	44 
+
+	33
+
+	
+js data types:
+
+null
+undefined
+boolean
+number
+string
+NaN
+
+Symbol  - new in ES6
