@@ -1,0 +1,43 @@
+1.	Create a page that shows a message “I’m JavaScript!”. Alert & console.log – embedded js
+2.	Take the solution of the previous task Show an alert. Modify it by extracting the script content into an external file alert.js, residing in the same folder. Open the page, ensure that the alert works.
+3.	Find the usage of ‘use strict’ 
+4.	Noscript tag
+5. inherting one person obj from other obj - prototype or __proto__ - tutorial republic, tektutorials
+6. check for infinity & nan using type of – task
+        var s=3/0; ? type?
+        var f=Nan? type?
+        make use of typeof()
+ 7. var a='world'
+undefined
+var b='hello'
+undefined
+a>b
+true
+a<b
+false
+var c=two;
+VM2221:1 Uncaught ReferenceError: two is not defined
+    at <anonymous>:1:7
+(anonymous) @ VM2221:1
+var c='two';
+undefined
+b>c
+false
+b<c
+true
+b
+"hello"
+
+8. function expression ?
+9. get the data from a register form and print it on console and also alert
+10. dynamically add input boxes in an html file on clicking button?
+
+11. function fun1()
+	{
+		alert('typing... ');
+	}
+  
+  <input onkeydown="fun(this)"/>
+  
+  get value from the text
+  12. bootstrap grids and  flex framework ( css tricks)
