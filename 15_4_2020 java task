@@ -1,0 +1,31 @@
+1. find what is method hiding
+2. check abt varargs
+3. chk new feature of switch case in java 7
+
+4. create 4 classes
+lady - base
+
+sub classes
+	empl
+	Home maker
+	member
+
+implement dynamic polymorphism
+
+5. static poly with example
+
+6. create 3 class
+Employee
+Admin
+manager
+
+when u create 5 objects of ad and 3 obj of manager in main method,
+
+count should be 8 employees created and printed
+
+use constructor withh inheritance concept
+
+
+7. whats the use 0b or 0B in java 7
+
+8. go through downward  casting , boxing and unboxing
