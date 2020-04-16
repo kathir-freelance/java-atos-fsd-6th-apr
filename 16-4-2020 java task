@@ -1,0 +1,41 @@
+15 lines
+
+pgm : 1-1000
+	121 -one twenty one
+	101 - one hundred and one
+	989 - nine hundred and eighty nine
+
+%, /, recursive funct,switch, stringt ar[]
+
+pgm 2: 1-1000
+	121 - one two one
+	989 - nine eight nine
+
+
+pgm 3:
+	192.168.1.1
+
+	is it valid ip address or not
+
+	String functions
+ 
+
+
+1. using interface
+	
+	WinOS , EndUser, NotePad
+	MacOS
+	Ubuntu
+
+2. go thru constr in inheritance
+
+3. i have 3 classes
+
+	Tv, DVD, Radio - find the correct base class for them
+
+then implement dyn poly , overriding and inheritance
+
+4. go thru what is collection, collections,map
+	
+
+	
