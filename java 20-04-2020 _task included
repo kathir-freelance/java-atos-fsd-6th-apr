@@ -1,0 +1,284 @@
+crud - ecommerce
+
+	addProd
+	dele
+	get by id
+	get all prod
+	upd
+	search
+
+	
+layered arch
+
+Map.Entry used for?
+
+hashmap and hash table
+
+try , catch, multiple catch, throw ,throws
+
+
+9 ppl interview
+all are attending the interview in order of the timing they came
+generate a report of ppl who attended the interview
+
+btech - 3
+bca - 3
+mca -  3
+
+report - collection - ?
+
+Map
+===
+		Map m=null;
+		m=new HashMap<>();
+		m.put('I',"one");
+		m.put(2, "second");
+		m.put(3.0f,3);
+		System.out.println(m);
+		Collection c=m.values();
+		System.out.println(c);
+		Set s=m.keySet();
+		System.out.println(s);
+		
+		Set s1=m.entrySet();
+		System.out.println(s1);
+		
+
+===================================================
+List l1=new ArrayList<>();
+		l1.add(1);
+		l1.add(11);
+		l1.add(13);
+		l1.add(1);
+		l1.add(9);
+		System.out.println("before sort : "+l1);
+		List l2=new ArrayList<>();
+		l2.add(100);
+		l2.add(110);
+		l2.add(130);
+		l2.add(51);
+		l2.add(29);
+		
+		Collections.sort(l1);
+		
+		System.out.println(l1);
+		l1.add(l2);
+		System.out.println("after adding l2 to l1 : "+l1);
+		System.out.println(l1.get(5));
+		System.out.println(((List)l1.get(5)).get(2));
+		
+		Collections.reverse(l1);
+		System.out.println(l1);
+
+============================================================
+	List l=null;
+		//l=new ArrayList(); //upward casting
+		l=new LinkedList();
+		l.add(10); 
+		l.add(new Integer(90));
+		l.add(null);
+		l.add(null);
+		l.add(10);
+		l.add("hello");
+		System.out.println(l);
+		
+		System.out.println("can we add emp or admin obj into the list?");
+		l.add(new Employee());//anonymous obj since doent hv names
+		l.add(new Employee(1001,"ajay"));
+		l.add(new Admin());
+		l.add(new Admin(111,"admin1"));
+		System.out.println(l);
+		
+		//iterator - pipe
+		//listIterator
+		//collection
+		
+		ListIterator i1=l.listIterator();
+		
+		while(i1.hasNext()){
+			System.out.println(i1.nextIndex());
+			System.out.println(i1.next());
+			
+		}
+		
+		
+		
+		//problem in these type of collection is iteration
+		/*int a[]={1,2,3,4,5};
+		for(int g:a)
+			System.out.println(g);
+		
+		for(Object o:l){
+			if(o instanceof Integer){
+				Integer i1=(Integer)o;
+				System.out.println(i1);
+			}
+			else if(o instanceof String)
+				System.out.println((String)o);
+			else if(o instanceof Employee){
+				Employee emp1=(Employee)o;
+				System.out.println(emp1);
+			}
+			else{
+				Admin ad1=(Admin)o;
+				System.out.println(ad1);
+			}
+		}*/
+		
+	}
+==================================================
+List l=new ArrayList();
+		l.add("hi");
+		l.add("100");
+		l.add("100");
+		l.add(900);
+		l.add(900);// implicit conversion happens - boxing
+		l.add("welcome");
+		l.add('c');
+		l.add(78.6f);
+		l.add(78.6f);
+		System.out.println(l);
+		//arraylist - growable array
+		System.out.println(l.get(5));
+		l.add(5, 6000);
+		System.out.println(l);
+		
+		//set method is used for replacing content at specified point
+		System.out.println(l.isEmpty());
+	//	l.clear();
+	//	System.out.println(l);
+	//	System.out.println(l.isEmpty());
+		Iterator i=l.iterator();
+		while(i.hasNext()){
+		//	l.add(90000);
+			if(i.next().equals("hi"))
+			i.remove();
+			System.out.println(i.next());
+		}
+
+		System.out.println(l);
+		
+		
+	}
+============================================================
+	Set s=new TreeSet();//default - asc order , no dupl
+		/*	s.add(111);
+			s.add(1);
+			s.add(1);
+			s.add(14);
+			s.add(12);
+			s.add("hi");// clas cast excep
+*/			
+			/*s.add("alpha");
+			s.add("Alpha");
+			s.add("ALPHA");
+			s.add("beta");
+			s.add("111");*/
+//			System.out.println(s);
+			s.add(new Emp1());// implement comparable in the emp1 class and override compare
+			System.out.println(s);		
+	}
+
+}
+class Emp1{}
+
+============================================================
+queue
+
+Queue q=null;
+		//q=new LinkedList();
+		q=new PriorityQueue<>();
+	//	q.add("hi");
+		q.add(900);
+		q.add(900);
+	//	q.add(null);
+		q.add(909);
+	//	q.add('c');
+		System.out.println(q);
+		
+	}
+
+============================================
+	Set s=null;
+		// hashset, treeset,linkedhashset
+		s=new HashSet();
+	/*	s.add(null);
+		s.add(null);
+		s.add("world");
+		s.add(123);
+		s.add(34.5f);
+		System.out.println(s);
+		s.add(new Emp());
+		s.add(new Emp());
+		s.add(new Adm());
+		System.out.println(s);
+		System.out.println(s.size());
+		//s.get - no indexing supoported in set
+		*/
+		Emp e1=new Emp();
+		
+		s.add(e1); 
+		s.add(e1);
+		System.out.println(s.size());
+		
+	}
+
+}
+
+class Emp{
+	
+	//overriding hashcode and eq it ll be prob in identifying dupli of obj dded in set
+}
+
+class Adm{}
+=======================================================
+
+		Stack st = new Stack();
+		st.push("23");
+		st.push(23);
+		st.push("hello");
+		st.push('c');
+		System.out.println(st);
+		System.out.println(st.peek());
+		System.out.println(st.peek());
+		System.out.println(st.pop()); //c and deletes from stack
+		System.out.println(st.pop());//gets hello and then del
+		System.out.println(st);
+		
+		st.add(123);
+		st.add(1);
+		st.add(10);
+		st.add(1);
+		System.out.println(st);
+		System.out.println(st.peek());
+		
+		
+		Deque stk=new ArrayDeque<>();
+
+		stk.add("hi"); //acts like queue - FIFO
+		stk.add("hello");
+		stk.add("welcome");
+		System.out.println(stk);
+		System.out.println(stk.peek());
+		
+		stk.push("data1");//stack LIFO
+		stk.push("data2");
+		stk.push("data3");
+		System.out.println(stk.peek());
+	}
+======================================================
+	Set s=new LinkedHashSet<>();
+			s.add(1);
+			s.add(1);
+			s.add('c');
+			s.add(145);
+			s.add(1.4d);
+			s.add("hi");
+			s.add(null);s.add(null);
+			System.out.println(s);
+			
+
+
+
+
+
