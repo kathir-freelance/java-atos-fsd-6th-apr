@@ -1,0 +1,15 @@
+	try{
+			System.out.println("in try");
+			//System.exit(0);
+			//int c=9/0;
+			try{
+			FileReader fr=new FileReader("v.txt");
+			}catch(FileNotFoundException f){
+				System.out.println("file missed");
+			}
+			FileReader fr1=new FileReader("v.txt");
+		}
+		
+    
+    
+    
