@@ -1,0 +1,25 @@
+List<String> a=new ArrayList();
+		a.add("hi");
+		a.add("hello");
+		a.add("welcome");
+		a.add("When");
+		a.add("help");
+		a.add("hire");
+		a.add("india");
+		a.add("race");
+		a.add("in");
+		
+		Stream<String> s1=a.stream();
+		List l1=s1.map(x->x.length()).filter(x->x>3).collect(Collectors.toList());
+		System.out.println(l1);
+
+print the strings which has length > than 4
+
+2.Stud
+	name , mark, id
+
+	u have create a list of student obj
+
+	find who get min mark - print that stud name
+	find who get max mark - print that stud name
+	find who get sum of all mark of all stud
