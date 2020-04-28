@@ -1,0 +1,16 @@
+create a html
+
+have a text box
+
+get a number - check its negativ eor postive and print it in console
+(serv)
+get a number - check its even or odd and print it in console
+(serv)
+
+create a html
+
+create 2 text box - un and pwd
+
+get a name and pwd  - validate it in serv and dipalay respective msg using another servlet (req obj.setAttribute) 
+
+ 
