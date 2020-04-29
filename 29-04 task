@@ -1,0 +1,15 @@
+html 
+a link="serv"
+
+in serv
+
+do get
+   forward to serv2
+
+in serv2
+ doget - print something
+
+simlilarly do for post
+form meth=post action=serv
+
+same as abv instead of get , it shud b post
